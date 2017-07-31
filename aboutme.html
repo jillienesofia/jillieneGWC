@@ -19,7 +19,26 @@
 </head>
 <body style="background-color:#45B3DD;">
     <h1>All About Jilliene Torres-Rivera </h1>
-    
+    <button id="toggle-btn">hide Biography</button>
+    <p id="Biography">
+      I am a sixteen year old girl who lives in Yonkers,New York. I'm currently going into junior year at wyoming seminary in Kengston,Pennsylvania.I have a sister named Lauren who is 15,a mom named Nancy,a dad named John,and last but not least my dog named Tuesday.Family is very important to me.
+    </p>
+
+<script>
+  var toggleBtn = document.getElementById("toggle-btn");
+  toggleBtn.addEventListener("click", myToggleFunction);
+
+  function myToggleFunction() {
+      var x = document.getElementById('Biography');
+      if (x.style.display === 'none') {
+          x.style.display = 'block';
+          toggleBtn.innerHTML = "Hide Biography";
+      } else {
+          x.style.display = 'none';
+          toggleBtn.innerHTML = "Show Biography";
+      }
+  }
+</script>
     <p><b>sports</b></p>
 	<p>When i was little i did ballet, gymnastics, soccer,then in middle school i did swimming and continued into high school,and my next adventure is softbal.</p>
         
@@ -29,7 +48,7 @@
 
         </div>
         </div>
-I am a sixteen year old girl who lives in Yonkers,New York. I'm currently going into junior year at wyoming seminary in Kengston,Pennsylvania.I have a sister named Lauren who is 15,a mom named Nancy,a dad named John,and last but not least a dog named Tuesday.I'am the only vegetarian in my family.Family is very important to me.
+
 	
   </body>
 </html>
