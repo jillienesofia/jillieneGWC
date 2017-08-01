@@ -37,7 +37,7 @@
       }
   }
 </script>
-   <button id="toggle-btn">hide Biography</button>
+   <button id="toggle-btn">hide Sports</button>
     <p id="Biography">
       When i was little i did 
     <br>~ballet 
@@ -54,13 +54,13 @@
   toggleBtn.addEventListener("click", myToggleFunction);
 
   function myToggleFunction() {
-      var x = document.getElementById('Biography');
+      var x = document.getElementById('Sports');
       if (x.style.display === 'none') {
           x.style.display = 'block';
-          toggleBtn.innerHTML = "Hide Biography";
+          toggleBtn.innerHTML = "Hide Sports";
       } else {
           x.style.display = 'none';
-          toggleBtn.innerHTML = "Show Biography";
+          toggleBtn.innerHTML = "Show Sports";
       }
   }
 </script>
