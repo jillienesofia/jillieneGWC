@@ -17,11 +17,43 @@
 </head>
 <body style="background-color:#45B3DD;">
     <h1>All About Jilliene Torres-Rivera </h1>
+	
     <button id="toggle-btn">hide Biography</button>
     <p id="Biography">
       I am a sixteen year old girl who lives in Yonkers,New York. I'm currently going into junior year at wyoming seminary in Kengston,Pennsylvania.I have a sister named Lauren who is 15,a mom named Nancy,a dad named John,and last but not least my dog named Tuesday.Family is very important to me.
     </p>
 
+
+<div><img id="prof-pic" src="http://i.imgur.com/kVmJ1aN.png" /></div>
+    </div>   
+
+   <button id="toggle-btn-2">hide Sports</button>
+    <p id="Sports">
+      When i was little i did
+    <br>~ballet 
+    <br>~gymnastics
+    <br>~soccer
+    <br>~swimming 
+    <br>~tennis
+    <br> ~basketball
+    <br> ~and my next adventure is softbal.
+    </p>
+
+<script>
+  var toggleBtn = document.getElementById("toggle-btn-2");
+  toggleBtn.addEventListener("click", myToggleFunction);
+
+  function myToggleFunction() {
+      var x = document.getElementById('Sports');
+      if (x.style.display === 'none') {
+          x.style.display = 'block';
+          toggleBtn.innerHTML = "Hide Sports";
+      } else {
+          x.style.display = 'none';
+          toggleBtn.innerHTML = "Show Sports";
+      }
+  }
+</script>
 <script>
   var toggleBtn = document.getElementById("toggle-btn");
   toggleBtn.addEventListener("click", myToggleFunction);
@@ -34,33 +66,6 @@
       } else {
           x.style.display = 'none';
           toggleBtn.innerHTML = "Show Biography";
-      }
-  }
-</script>
-   <button id="toggle-btn">hide Sports</button>
-    <p id="Biography">
-      When i was little i did 
-    <br>~ballet 
-    <br>~gymnastics
-    <br>~soccer
-    <br>~swimming 
-    <br>~tennis
-    <br> ~basketball
-    <br> ~and my next adventure is softbal.
-    </p>
-
-
-  var toggleBtn = document.getElementById("toggle-btn");
-  toggleBtn.addEventListener("click", myToggleFunction);
-
-  function myToggleFunction() {
-      var x = document.getElementById('Sports');
-      if (x.style.display === 'none') {
-          x.style.display = 'block';
-          toggleBtn.innerHTML = "Hide Sports";
-      } else {
-          x.style.display = 'none';
-          toggleBtn.innerHTML = "Show Sports";
       }
   }
 </script>
