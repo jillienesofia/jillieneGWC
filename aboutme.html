@@ -22,6 +22,13 @@
     <p id="Biography">
       I am a sixteen year old girl who lives in Yonkers,New York. I'm currently going into junior year in high school.I have a sister named Lauren who is 15,a mom named Nancy,a dad named John,and last but not least my dog named Tuesday.Family is very important to me.
     </p>
+var colorButton = document.getElementById("color-btn");
+
+colorButton.addEventListener("click", function(){
+  var colors = ["blue", "pink", "hotpink", "purple", "lightblue", "aqua", "teal", "fuchsia", "lightpink", "orange", "green", "yellow", "maroon", "black"];
+  var x = Math.floor((Math.random() * colors.length) + 1);
+  colorButton.style.backgroundColor = colors[x];
+});
 
 
 <div><img id="prof-pic" src="http://i.imgur.com/kVmJ1aN.png" /></div>
