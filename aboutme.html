@@ -47,32 +47,32 @@ colorButton.addEventListener("click", function(){
     </p>
 
 <script>
-  var toggleBtn = document.getElementById("toggle-btn-2");
+  var toggleBtn2 = document.getElementById("toggle-btn-2");
   toggleBtn.addEventListener("click", myToggleFunction2);
 
   function myToggleFunction2() {
       var x = document.getElementById('Sports');
       if (x.style.display === 'none') {
           x.style.display = 'block';
-          toggleBtn.innerHTML = "Hide Sports";
+          toggleBtn2.innerHTML = "Hide Sports";
       } else {
           x.style.display = 'none';
-          toggleBtn.innerHTML = "Show Sports";
+          toggleBtn2.innerHTML = "Show Sports";
       }
   }
 </script>
 <script>
-  var toggleBtn = document.getElementById("toggle-btn");
+  var toggleBtn1 = document.getElementById("toggle-btn");
   toggleBtn.addEventListener("click", myToggleFunction);
 
   function myToggleFunction() {
       var x = document.getElementById('Biography');
       if (x.style.display === 'none') {
           x.style.display = 'block';
-          toggleBtn.innerHTML = "Hide Biography";
+          toggleBtn1.innerHTML = "Hide Biography";
       } else {
           x.style.display = 'none';
-          toggleBtn.innerHTML = "Show Biography";
+          toggleBtn1.innerHTML = "Show Biography";
       }
   }
 </script>
